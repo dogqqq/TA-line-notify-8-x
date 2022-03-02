@@ -1,0 +1,54 @@
+{
+    "pages": {
+        "configuration": {
+            "tabs": [
+                {
+                    "entity": [
+                        {
+                            "type": "singleSelect", 
+                            "label": "Log level", 
+                            "defaultValue": "INFO", 
+                            "field": "loglevel", 
+                            "options": {
+                                "autoCompleteFields": [
+                                    {
+                                        "value": "DEBUG", 
+                                        "label": "DEBUG"
+                                    }, 
+                                    {
+                                        "value": "INFO", 
+                                        "label": "INFO"
+                                    }, 
+                                    {
+                                        "value": "WARNING", 
+                                        "label": "WARNING"
+                                    }, 
+                                    {
+                                        "value": "ERROR", 
+                                        "label": "ERROR"
+                                    }, 
+                                    {
+                                        "value": "CRITICAL", 
+                                        "label": "CRITICAL"
+                                    }
+                                ], 
+                                "disableSearch": true
+                            }
+                        }
+                    ], 
+                    "name": "logging", 
+                    "title": "Logging"
+                }
+            ], 
+            "description": "Set up your add-on", 
+            "title": "Configuration"
+        }
+    }, 
+    "meta": {
+        "version": "1.0.0", 
+        "displayName": "Line Notify", 
+        "restRoot": "TA_line_notify", 
+        "name": "TA-line-notify", 
+        "apiVersion": "3.0.0"
+    }
+}

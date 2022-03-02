@@ -1,0 +1,7 @@
+[ta_line_notify_settings/logging]
+version = 8.2.4
+modtime = 1646211343.393785000
+
+[alert_actions/send_alert_using_line_notify]
+version = 8.2.4
+modtime = 1646211297.581203000
