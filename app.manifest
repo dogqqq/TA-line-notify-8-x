@@ -12,6 +12,11 @@
         "name": "JackTsai@零壹科技",
         "email": null,
         "company": null
+      },
+      {
+        "name": "Joy Chen",
+        "email": "joyc@splunk.com",
+        "company": "Splunk"
       }
     ],
     "releaseDate": null,
