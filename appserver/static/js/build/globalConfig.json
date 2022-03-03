@@ -48,7 +48,7 @@
         "version": "1.0.0", 
         "displayName": "Line Notify", 
         "restRoot": "TA_line_notify", 
-        "name": "TA-line-notify", 
+        "name": "TA-line-notify-8-x", 
         "apiVersion": "3.0.0"
     }
 }
