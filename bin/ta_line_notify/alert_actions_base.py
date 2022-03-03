@@ -206,7 +206,6 @@ class ModularAlertBase(ModularAction):
             if level:
                 self._logger.setLevel(level)
         except Exception as e:
-            # if e.message and '403' in e.message:
             if '403' in str(e):
                 self.log_error('User does not have permissions')
             else:
@@ -221,9 +220,6 @@ class ModularAlertBase(ModularAction):
             sys.exit(2)
         except Exception as e:
             msg = "Unexpected error: {}."
-            #if e.message:
-                #self.log_error(msg.format(e.message))
-            #else:
             import traceback
             self.log_error(msg.format(traceback.format_exc()))
             sys.exit(2)
