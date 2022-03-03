@@ -45,5 +45,5 @@ class AlertActionWorkersend_alert_using_line_notify(ModularAlertBase):
         return status
 
 if __name__ == "__main__":
-    exitcode = AlertActionWorkersend_alert_using_line_notify("TA-line-notify", "send_alert_using_line_notify").run(sys.argv)
+    exitcode = AlertActionWorkersend_alert_using_line_notify("TA-line-notify-8-x", "send_alert_using_line_notify").run(sys.argv)
     sys.exit(exitcode)
