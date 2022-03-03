@@ -206,7 +206,8 @@ class ModularAlertBase(ModularAction):
             if level:
                 self._logger.setLevel(level)
         except Exception as e:
-            if e.message and '403' in e.message:
+            # if e.message and '403' in e.message:
+            if '403' in str(e):
                 self.log_error('User does not have permissions')
             else:
                 self.log_error('Unable to set log level')
