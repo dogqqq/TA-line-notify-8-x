@@ -24,7 +24,7 @@ def process_event(helper, *args, **kwargs):
     fields = helper.get_param("fields")
     
     fielddata = fields.split(",")
-    
+
     fielddata = [ field.strip() for field in fielddata ]
     
     events = helper.get_events()
@@ -32,7 +32,7 @@ def process_event(helper, *args, **kwargs):
     
     for event in events:
         
-        if message_kind == 'custom':
+        if message_kind == 'raw':
             #msg .= event.get("_raw")
             msg = event.get("_raw")
         else:
