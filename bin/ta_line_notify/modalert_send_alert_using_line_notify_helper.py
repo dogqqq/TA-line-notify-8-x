@@ -38,8 +38,13 @@ def process_event(helper, *args, **kwargs):
         else:
             for field in fielddata:
                 # msg .= event.get(field)
-                msg += "\n" + field + "=" + event.get(field) 
-                helper.log_info("msg={}".format(msg))
-                print(msg)
+                field_value = event.get(field)
+                
+                if field_value is None:
+                    field_value = ""
+
+                msg += "\n" + field + "=" + field_value 
+
+                # print(msg)
         lineNotifyMessage(notify_token, msg)
     return 0
