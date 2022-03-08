@@ -25,6 +25,8 @@ def process_event(helper, *args, **kwargs):
     
     fielddata = fields.split(",")
     
+    fielddata = [ field.strip() for field in fielddata ]
+    
     events = helper.get_events()
     msg = ""
     
