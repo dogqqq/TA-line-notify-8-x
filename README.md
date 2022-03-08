@@ -18,3 +18,13 @@ Method 2 - Download from github
 3. Rename `TA-line-notify-8-x-main` to `TA-line-notify-8-x`
 4. Move the whole folder to `$SPLUNK_HOME/etc/apps/`
 5. restart/start the Splunk
+
+## Use Guide
+
+- Message kind
+  - `Raw`
+    - Send event notify with _raw data
+    - Unnecessary to fill `Fields`
+  - `Custom`
+    - Send event notify with specific field
+    - Necessary to fill the `Fields`
