@@ -21,6 +21,9 @@ Method 2 - Download from github
 
 ## Use Guide
 
+- When saving inline search to alert, choose Line Notify Alert
+- Line token
+  -  Must sign up and get `access token` from https://notify-bot.line.me/ first
 - Message kind
   - `Raw`
     - Send event notify with _raw data
